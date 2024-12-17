@@ -329,7 +329,7 @@ const SideBar = () => {
             </div>
           </div>
 
-          <main className="bg-green-800">
+          <main className="p-4 lg:p-8 bg-[#f7f6fb]">
             <div>
               <Outlet />
             </div>
