@@ -1,41 +1,6 @@
-const Home = () => {
-  const gettingStartedData = [
-    {
-      id: 1,
-      title: "Step 1: Create your project",
-      content: "Give your project a name, add a description and your goals.",
-    },
-    {
-      id: 2,
-      title: "Step 2: Invite your teammates",
-      content: "Research is better together, Invite your colleagues.",
-    },
-    {
-      id: 3,
-      title: "Step 3: Setup your research process",
-      content: "Add the processes that are specific to this project.",
-    },
-  ];
+import { gettingStartedData, researchData } from "../data";
 
-  const researchData = [
-    {
-      id: 1,
-      title: "Don’t start from scratch, use a template",
-      content: "Begin with field-tested frameworks adaptable to your research.",
-    },
-    {
-      id: 2,
-      title: "Add steps and set milestones",
-      content:
-        "Define key stages and monitor progress from hypothesis to conclusion.",
-    },
-    {
-      id: 3,
-      title: "Track changes in your documents over time.",
-      content:
-        "Capture every revision to ensure data integrity and transparency.",
-    },
-  ];
+const Home = () => {
   return (
     <div>
       <div>
@@ -119,7 +84,7 @@ const Home = () => {
         <h1 className="font-extrabold">Resources for you</h1>
 
         <div className="flex flex-col lg:flex-row">
-          <div className="bg-white w-[100%] lg:w-[25%] rounded-xl border border-[#EAECF0] mt-4 mr-0 lg:mr-2">
+          <div className="bg-white w-[100%] lg:w-[25%] rounded-2xl border border-[#EAECF0] mt-4 mr-0 lg:mr-2">
             <img src="analysis.svg" alt="Analysis" className="w-full" />
             <div className="w-fit py-6 px-4">
               <h2 className="mb-2">Academic literature review</h2>
@@ -129,30 +94,33 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="bg-white w-[100%] lg:w-[25%] rounded-xl border border-[#EAECF0] mt-4 ml-0 mr-0 lg:ml-2 lg:mr-2">
+          <div className="bg-white w-[100%] lg:w-[25%] rounded-2xl border border-[#EAECF0] mt-4 ml-0 mr-0 lg:ml-2 lg:mr-2">
             <img src="analysis.svg" alt="Analysis" className="w-full" />
             <div className="w-fit py-6 px-4">
               <h2 className="mb-2">Data analysis templates</h2>
               <p className="text-[#667085] text-[12px]">
-              Streamline patient data collection and <br /> analysis for medical research.
+                Streamline patient data collection and <br /> analysis for
+                medical research.
               </p>
             </div>
           </div>
-          <div className="bg-white w-[100%] lg:w-[25%] rounded-xl border border-[#EAECF0] mt-4 ml-0 mr-0 lg:ml-2 lg:mr-2">
+          <div className="bg-white w-[100%] lg:w-[25%] rounded-2xl border border-[#EAECF0] mt-4 ml-0 mr-0 lg:ml-2 lg:mr-2">
             <img src="analysis.svg" alt="Analysis" className="w-full" />
             <div className="w-fit py-6 px-4">
               <h2 className="mb-2">UX Heuristic template.</h2>
               <p className="text-[#667085] text-[12px]">
-              Assess your interface against established <br /> usability principles.
+                Assess your interface against established <br /> usability
+                principles.
               </p>
             </div>
           </div>
-          <div className="bg-white w-[100%] lg:w-[25%] rounded-xl border border-[#EAECF0] mt-4 ml-0 lg:ml-2">
+          <div className="bg-white w-[100%] lg:w-[25%] rounded-2xl border border-[#EAECF0] mt-4 ml-0 lg:ml-2">
             <img src="analysis.svg" alt="Analysis" className="w-full" />
             <div className="w-fit py-6 px-4">
               <h2 className="mb-2">Affinity mapping template</h2>
               <p className="text-[#667085] text-[12px]">
-              Assess your interface against established <br /> usability principles.
+                Assess your interface against established <br /> usability
+                principles.
               </p>
             </div>
           </div>

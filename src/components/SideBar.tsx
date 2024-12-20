@@ -19,7 +19,6 @@ import {
   ClockIcon,
   FolderIcon,
 } from "@heroicons/react/24/outline";
-
 import { Link, Outlet } from "react-router-dom";
 
 function classNames(...classes: string[]) {
@@ -291,10 +290,10 @@ const SideBar = () => {
         </div>
 
         <div className="lg:pl-72">
-          <div className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 border-b border-green-200 bg-white px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
+          <div className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 border-b border-[#EAECF0] bg-white px-4 sm:gap-x-6 sm:px-6 lg:px-8">
             <button
               type="button"
-              className="-m-2.5 p-2.5 text-green-700 lg:hidden"
+              className="-m-2.5 p-2.5 text-purple-700 lg:hidden"
               onClick={() => setSidebarOpen(true)}
             >
               <span className="sr-only">Open sidebar</span>
@@ -302,12 +301,12 @@ const SideBar = () => {
             </button>
 
             <div
-              className="h-6 w-px bg-green-900/10 lg:hidden"
+              className="h-6 w-px bg-purple-900/10 lg:hidden"
               aria-hidden="true"
             />
 
             <div className="flex flex-1 gap-x-4 self-stretch lg:gap-x-6">
-              <div className="relative flex flex-1 items-center font-semibold leading-6 text-green-900 text-1xl lg:text-2xl">
+              <div className="relative flex flex-1 items-center font-semibold leading-6 text-purple-900 text-1xl lg:text-2xl">
                 {" "}
               </div>
               <div className="flex items-center gap-x-4 lg:gap-x-6">
@@ -319,7 +318,7 @@ const SideBar = () => {
                 <Menu as="div" className="relative">
                   <MenuButton className="-m-1.5 flex items-center p-1.5">
                     <img
-                      className="h-8 w-8 rounded-full bg-green-50"
+                      className="h-8 w-8 rounded-full bg-purple-50"
                       src="./avatar.svg"
                       alt=""
                     />
