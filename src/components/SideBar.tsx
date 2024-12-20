@@ -17,7 +17,7 @@ import {
   XMarkIcon,
   StarIcon,
   ClockIcon,
-  FolderIcon,
+  FolderIcon
 } from "@heroicons/react/24/outline";
 import { Link, Outlet } from "react-router-dom";
 
@@ -310,6 +310,33 @@ const SideBar = () => {
                 {" "}
               </div>
               <div className="flex items-center gap-x-4 lg:gap-x-6">
+                <div>
+                  <div className="relative w-full">
+                    <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="size-6"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                        />
+                      </svg>
+                    </div>
+                    <input
+                      type="text"
+                      id="simple-search"
+                      className="border border-[#D0D5DD] text-[#667085] text-sm rounded-lg focus:none block w-full lg:w-[20rem] ps-10 p-2.5 dark:placeholder-[#667085] mr-[6rem]"
+                      placeholder="Search"
+                      required
+                    />
+                  </div>
+                </div>
                 <button type="button" className="-m-2.5 p-2.5 text-[#667085]">
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
